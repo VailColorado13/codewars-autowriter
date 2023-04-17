@@ -12,7 +12,7 @@ async function promptUser() {
     
     rl.question("please enter the link to your kata:" , async function(url) {
         const [kyu, title] = await scraper.getData(url)
-        fileWriter.writeFolder(kyu, title)
+        fileWriter.writeFolder(kyu, title, url)
         rl.close()
     }) 
 }

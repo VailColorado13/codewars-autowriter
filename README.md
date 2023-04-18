@@ -14,7 +14,7 @@
 
 # Instructions - you must have node.js installed. 
 
-## 1. Download/fork/clone repo. Add codewars-autowriter to what ever local folder you are using to store your codewars solutions. 
+## 1. Download/fork/clone repo. Add codewars-autowriter to the local folder you are using to store your codewars solutions. 
 ## 2. Open terminal and cd into codewars-autowriter 
 ## 3. run the following: 
 ```

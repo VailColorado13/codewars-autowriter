@@ -2,6 +2,8 @@
 
 #### This script uses axios and cheerio to scrape the codewars site and automatically create a template folder that can be added to your github repo. All you need to do is enter the link to your kata. 
 
+#### in order to use this program, you will need to be familiar with basic commandline folder navigation in the terminal and have node.js installed.
+
 #### By default, the folder will be saved in the same directory that holds the codewars autowriter folder. 
 
 #### The folder will be named with the following convention: MM.DD.YY-kyu-level-name-of-kata
@@ -22,7 +24,6 @@ npm install
 node main.js
 ```
 ## 4. From here you will be prompted to ender the link to your kata. It must match the following format: https://www.codewars.com/kata/57d250e55dc38e288c000081/javascript
-#### (the easiest way to get this link is by clicking the 'details' tab of a completed kata.)
 
 ## 5. cd into the newly created folder and add your solution - then your folder will be all set to push to your repo! 
 

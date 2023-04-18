@@ -8,7 +8,7 @@
 
 #### The folder will be named with the following convention: MM.DD.YY-kyu-level-name-of-kata
 
-#### within the folder, there will be a file called 'solution.js"
+#### within the folder, there will be a file called 'solution.js'
 #### solution.js will be autofilled with the following information about the kata.
 
 > Solution for 6 kyu Sample Kata <br>

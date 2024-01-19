@@ -4,7 +4,8 @@ const textWriter = require('./textWriter')
 
 module.exports = {
     writeFolder: (kyu, title, link) => {
-        const dirName = dataProcessor.createDirName(kyu, title)
+      const linkIsJavaScript = link.includes('javascript')
+      const dirName = dataProcessor.createDirName(kyu, title)
         fs.mkdir(`../${dirName}`, (err) => {
           if (err) {
             return console.error(err)
@@ -15,7 +16,7 @@ module.exports = {
           console.log(`\n\n\n`)
         
           // move the writeFile function here
-          fs.writeFile(`../${dirName}/solution.js`, textWriter.writeHeader(kyu, title, link), (err) => {
+          fs.writeFile(`../${dirName}/solution.${linkIsJavaScript ? 'js' : 'py'}`, textWriter.writeHeader(kyu, title, link, linkIsJavaScript), (err) => {
             if (err) console.log(err)
           })
         })
